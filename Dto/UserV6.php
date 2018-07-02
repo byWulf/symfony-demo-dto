@@ -44,7 +44,7 @@ class UserV6
     private $parents;
 
     /**
-     * @var ArticleCollectionV1
+     * @var ArticleCollectionV2
      */
     private $articles;
 
@@ -52,7 +52,7 @@ class UserV6
     {
         $this->addresses = new AddressCollectionV1();
         $this->parents = new UserCollectionV6();
-        $this->articles = new ArticleCollectionV1();
+        $this->articles = new ArticleCollectionV2();
     }
 
     /**
@@ -182,18 +182,18 @@ class UserV6
     }
 
     /**
-     * @return ArticleCollectionV1
+     * @return ArticleCollectionV2
      */
-    public function getArticles(): ArticleCollectionV1
+    public function getArticles(): ArticleCollectionV2
     {
         return $this->articles;
     }
 
     /**
-     * @param ArticleCollectionV1 $articles
+     * @param ArticleCollectionV2 $articles
      * @return UserV6
      */
-    public function setArticles(ArticleCollectionV1 $articles): UserV6
+    public function setArticles(ArticleCollectionV2 $articles): UserV6
     {
         $this->articles = $articles;
         return $this;

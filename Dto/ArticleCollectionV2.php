@@ -7,7 +7,7 @@ namespace Api\Dto;
  * Class ArticleCollectionV1
  * @package Api\Dto
  */
-class ArticleCollectionV1 extends Collection
+class ArticleCollectionV2 extends Collection
 {
     /**
      * @param ArticleV1 $article

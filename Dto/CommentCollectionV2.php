@@ -7,7 +7,7 @@ namespace Api\Dto;
  * Class CommentCollectionV1
  * @package Api\Dto
  */
-class CommentCollectionV1 extends Collection
+class CommentCollectionV2 extends Collection
 {
     /**
      * @param CommentV1 $comment
