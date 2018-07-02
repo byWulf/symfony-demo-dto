@@ -4,21 +4,21 @@ declare(strict_types=1);
 namespace Api\Dto;
 
 /**
- * Class CommentCollectionV1
+ * Class CommentCollectionV2
  * @package Api\Dto
  */
 class CommentCollectionV2 extends Collection
 {
     /**
-     * @param CommentV1 $comment
+     * @param CommentV2 $comment
      */
-    public function addComment(CommentV1 $comment): void
+    public function addComment(CommentV2 $comment): void
     {
         $this->collection[] = $comment;
     }
 
     /**
-     * @return CommentV1[]
+     * @return CommentV2[]
      */
     public function getComments(): array
     {
