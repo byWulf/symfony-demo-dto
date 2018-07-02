@@ -25,6 +25,11 @@ class ItemV1
     private $attributes;
 
     /**
+     * @var GroupV1
+     */
+    private $group;
+
+    /**
      * @return int
      */
     public function getId(): int
@@ -85,6 +90,24 @@ class ItemV1
     public function addAttribute(AttributeV1 $attribute): ItemV1
     {
         $this->attributes[] = $attribute;
+        return $this;
+    }
+
+    /**
+     * @return GroupV1
+     */
+    public function getGroup(): GroupV1
+    {
+        return $this->group;
+    }
+
+    /**
+     * @param GroupV1 $group
+     * @return ItemV1
+     */
+    public function setGroup(GroupV1 $group): ItemV1
+    {
+        $this->group = $group;
         return $this;
     }
 }

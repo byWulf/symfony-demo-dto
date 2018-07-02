@@ -24,6 +24,11 @@ class ItemV2
      */
     private $attributes;
 
+    /**
+     * @var GroupV1
+     */
+    private $group;
+
     public function __construct()
     {
         $this->attributes = new AttributeCollectionV2();
@@ -80,6 +85,24 @@ class ItemV2
     public function setAttributes(AttributeCollectionV2 $attributes): ItemV2
     {
         $this->attributes = $attributes;
+        return $this;
+    }
+
+    /**
+     * @return GroupV1
+     */
+    public function getGroup(): GroupV1
+    {
+        return $this->group;
+    }
+
+    /**
+     * @param GroupV1 $group
+     * @return ItemV2
+     */
+    public function setGroup(GroupV1 $group): ItemV2
+    {
+        $this->group = $group;
         return $this;
     }
 }
