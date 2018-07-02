@@ -39,7 +39,7 @@ class UserV5
     private $addresses = [];
 
     /**
-     * @var UserV5[]
+     * @var UserV1[]
      */
     private $parents = [];
 
@@ -167,7 +167,7 @@ class UserV5
     }
 
     /**
-     * @return UserV5[]
+     * @return UserV1[]
      */
     public function getParents(): array
     {
@@ -175,7 +175,7 @@ class UserV5
     }
 
     /**
-     * @param UserV5[] $parents
+     * @param UserV1[] $parents
      * @return UserV5
      */
     public function setParents(array $parents): UserV5
@@ -186,10 +186,10 @@ class UserV5
 
 
     /**
-     * @param UserV5 $parent
+     * @param UserV1 $parent
      * @return UserV5
      */
-    public function addParent(UserV5 $parent): UserV5
+    public function addParent(UserV1 $parent): UserV5
     {
         $this->parents[] = $parent;
         return $this;
