@@ -22,7 +22,7 @@ class ItemV2
     /**
      * @var AttributeCollectionV2
      */
-    private $attributes;
+    private $attributeCollection;
 
     /**
      * @var GroupV1
@@ -31,7 +31,7 @@ class ItemV2
 
     public function __construct()
     {
-        $this->attributes = new AttributeCollectionV2();
+        $this->attributeCollection = new AttributeCollectionV2();
     }
 
     /**
@@ -73,18 +73,18 @@ class ItemV2
     /**
      * @return AttributeCollectionV2
      */
-    public function getAttributes(): AttributeCollectionV2
+    public function getAttributeCollection(): AttributeCollectionV2
     {
-        return $this->attributes;
+        return $this->attributeCollection;
     }
 
     /**
-     * @param AttributeCollectionV2 $attributes
+     * @param AttributeCollectionV2 $attributeCollection
      * @return ItemV2
      */
-    public function setAttributes(AttributeCollectionV2 $attributes): ItemV2
+    public function setAttributeCollection(AttributeCollectionV2 $attributeCollection): ItemV2
     {
-        $this->attributes = $attributes;
+        $this->attributeCollection = $attributeCollection;
         return $this;
     }
 
