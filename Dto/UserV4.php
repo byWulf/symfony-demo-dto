@@ -36,11 +36,11 @@ class UserV4
     /**
      * @var AddressCollectionV1
      */
-    private $addresses;
+    private $addressCollection;
     
     public function __construct()
     {
-        $this->addresses = new AddressCollectionV1();
+        $this->addressCollection = new AddressCollectionV1();
     }
 
     /**
@@ -136,18 +136,18 @@ class UserV4
     /**
      * @return AddressCollectionV1
      */
-    public function getAddresses(): AddressCollectionV1
+    public function getAddressCollection(): AddressCollectionV1
     {
-        return $this->addresses;
+        return $this->addressCollection;
     }
 
     /**
-     * @param AddressCollectionV1 $addresses
+     * @param AddressCollectionV1 $addressCollection
      * @return UserV4
      */
-    public function setAddresses(AddressCollectionV1 $addresses): UserV4
+    public function setAddressCollection(AddressCollectionV1 $addressCollection): UserV4
     {
-        $this->addresses = $addresses;
+        $this->addressCollection = $addressCollection;
         return $this;
     }
 }
